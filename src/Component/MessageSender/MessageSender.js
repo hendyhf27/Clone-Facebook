@@ -5,9 +5,15 @@ import { InsertEmoticon, PhotoLibrary, Videocam } from '@material-ui/icons'
 
 const MessageSender = () => {
     const [input, setInput] = useState(' Test ')
+    const [imageUrl, setImageUrl] = useState("")
 
     const handleSubmit = e => {
-        alert(`berhasil dikirim`)
+        e.preventDefault();
+
+        // some clever db stuff
+
+        setInput("");
+        setImageUrl("");
     }
 
     return (
